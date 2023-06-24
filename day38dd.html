@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>day38</title>
+        <script>
+            function sumitt(){
+                 a= window.open('pid.html',"","width=300 ,height=300 ,scrollbars=0, menubars=0");
+                 
+                }
+                function cancele(){
+                    a.close();
+                }
+                function totale(){
+                       r= document.getElementById("pr").value*document.getElementById("q").value;
+                       document.getElementById("to").value=r;
+                       document.getElementById("to").readOnly=true;
+                }
+                function tott(){
+                       r= document.getElementById("prr").value*document.getElementById("qr").value;
+                       document.getElementById("tor").value=r;
+                       document.getElementById("tor").readOnly=true;
+                }
+                function tottt(){
+                       r= document.getElementById("prrr").value*document.getElementById("qrr").value;
+                       document.getElementById("torr").value=r;
+                       document.getElementById("torr").readOnly=true;
+                }
+                function totttt(){
+                       r= parseInt(document.getElementById("to").value)+parseInt(document.getElementById("tor").value)+parseInt(document.getElementById("torr").value);
+                       document.getElementById("gtt").value=r;
+                }
+                function cur(){
+                           i=document.getElementById("pai").value;
+                           v=document.getElementById("gtt").value;
+                           u=document.getElementById("gtt").value;
+                           if(i=="RUPEE"){
+                            document.getElementById("gtt").value=v;
+                           }if(i=="USD"){
+                               document.getElementById("gtt").value=u*70;
+                               document.getElementById("lab").innerText="Grand Total : $"
+                           }
+
+                }
+        </script>
+    </head>
+    <body>
+        <select name="currency" id="pai" onchange="cur()">
+            <option >RUPEE</option>
+            <option >USD</option>
+          </select></br>
+        <table border="1" style=" border-collapse:collapse;"> 
+            <tr>
+                <th>pid</th>
+                <th>pname</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>total</th>
+            </tr>
+            <tr>
+                <td ><input type="text" value="1"></td>
+                <td><input type="text" value="banana"></td>
+                <td ><input  id="pr" type="text" value="50"></td>
+                <td><input  id="q" type="text" value="4"></td>
+                <td><input type="text" id="to" onfocus="totale()"></td>
+            </tr>
+            <tr>
+                <td ><input type="text" value="2"></td>
+                <td><input type="text" value="apple"></td>
+                <td ><input  id="prr" type="text" value="200"></td>
+                <td><input  id="qr" type="text" value="2"></td>
+                <td><input type="text" id="tor" onfocus="tott()"></td>
+            </tr>
+            <tr>
+                <td ><input type="text" value="3"></td>
+                <td><input type="text" value="strawberry"></td>
+                <td ><input  id="prrr" type="text" value="100"></td>
+                <td><input  id="qrr" type="text" value="3"></td>
+                <td><input type="text" id="torr" onfocus="tottt()"></td>
+            </tr>
+        </table>
+    </br></br>
+    <label id="lab">Grand Total : ₹</label><input  id="gtt" type="text" onfocus="totttt()" >
+</br></br>
+        <input type="button" onclick="sumitt()" value="submit"> 
+        <input type="button" onclick="cancele()" value="cancel">
+    </body>
+</html>
