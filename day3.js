@@ -11,6 +11,9 @@ function finde(){
         }
     }
 }
+function Love(){
+    document.getElementById("sm").innerText="Micky";
+}
 
 function summax(){
     a=[10,20,30,40,50];
