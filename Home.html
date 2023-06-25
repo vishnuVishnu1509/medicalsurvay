@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="shortcut icon" href ="Home.jpeg">
+    <style>
+        
+    </style>
+    <script>
+        var a=0;
+        var b=0;
+        var c=0;
+        function img1(){
+            if(a%2==0)
+            {
+                h1=document.getElementById("b2").innerHTML;
+                document.getElementById("a1").innerHTML=h1;
+                a=a+1;
+            }
+            else
+            {
+                document.getElementById("a1").innerHTML="";
+                a=a+1;
+            }
+        }
+                        
+        function img2()
+        {
+            if(b%2==0)
+            {
+                h1=document.getElementById("b1").innerHTML;
+                document.getElementById("a2").innerHTML=h1;
+                b=b+1;
+            }
+            else
+            {
+                document.getElementById("a2").innerHTML="";
+                b=b+1;
+            }
+        }
+        function img3()
+        {
+            if(c%2==0)
+            {
+                h1=document.getElementById("b3").innerHTML;
+                document.getElementById("a3").innerHTML=h1;
+                c=c+1;
+            }
+            else
+            {
+                document.getElementById("a3").innerHTML="";
+                c=c+1;
+            }
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="healthstyle.css">
+<body>
+    <nav >
+        <a href="Master.html">Welcome</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Video.html">Video</a>
+        <a href="Contact.html">Contact</a>
+        <a href="About.html">About</a>
+    </nav>
+    <section class="hero">
+        <img src="https://vemu.org/assets/img/vemu-banner.jpg" width="1247" height="250">
+       <center>
+       <a><img  src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/hospital-logo%2C-doctor%2C-medical%2C-design-template-d81cbc2703294c0f6c6ecabadf752e77_screen.jpg?ts=1653554433" height="300" width="300" onclick="img1()" ></a>
+        </center>
+        <div id="a1"></div>
+       <center>
+       <a ><img  src="https://t3.ftcdn.net/jpg/05/14/36/48/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg" width="300" height="300" onclick="img2()"></a>
+       </center>
+       <div id="a2"></div>
+       <center>
+       <a ><img  src="https://marketplace.canva.com/EAE8eSD-Zyo/1/0/1600w/canva-blue%2C-white-and-green-medical-care-logo-oz1ox2GedbU.jpg" width="300" height="300" onclick="img3()"></a>
+       </center>
+       <div id="a3"></div>
+       <div style="visibility: hidden;" id="b2">
+        <h3 >Health Caring 1</h3>
+        <p >Hospitals complement and amplify the effectiveness of many other parts of the health system, providing continuous availability of services for acute and complex conditions. They concentrate scarce resources within well-planned referral networks to respond efficiently to population health needs. They are an essential element of Universal Health Coverage (UHC) and will be critical to meeting the Sustainable Development Goals (SDG)</p>
+
+    <h3 >Health Caring 2</h3>
+  <p >When people have complex or serious medical problems, the attending physician sometimes requests that specialists evaluate the person and recommend how to best diagnose and treat the problems. For example, the specialist may be a doctor who is extensively trained in the diagnosis and treatment of disorders of the heart (cardiologist), kidneys (nephrologist), or cancer (oncologist). In other cases, the specialist may be a surgeon who has particular expertise in one area, such as the brain, spine, and nerves (neurosurgeon) or muscles, bones, and joints (orthopedic surgeon.</p>
+</div>
+<div style="visibility: hidden;" id="b1">
+    <h3>Health Care</h3>
+    <p >Health care, or healthcare, is the improvement of health via the prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields. Medicine, dentistry, pharmacy, midwifery, nursing, optometry, audiology, psychology, occupational therapy, physical therapy, athletic training, and other health professions all constitute health care. It includes work done in providing primary care, secondary care, and tertiary care, as well as in public health.</p>
+</div>
+<div style="visibility: hidden;" id="b3">
+    <h3>Tips for healthy eating</h3>
+<p>
+1. Base your meals on higher fibre starchy carbohydrates<br>
+2. Eat lots of fruit and veg<br>
+3. Eat more fish, including a portion of oily fish<br>
+4. Cut down on saturated fat and sugar<br>
+5. Eat less salt: no more than 6g a day for adults<br>
+6. Get active and be a healthy weight<br>
+7. Do not get thirsty<br>
+8. Do not skip breakfast<br>
+</p>
+</div>
+         </section>
+         
+</body>
+</html>

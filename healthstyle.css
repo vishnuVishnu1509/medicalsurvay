@@ -1,0 +1,24 @@
+nav{
+    text-align: center;
+
+    
+    /* margin-left: 100px; */
+    background-color: black;
+    
+    
+
+}
+a:link{
+    text-decoration:solid;
+}
+a:hover{
+    color: chocolate;
+    
+}
+a{
+    color: aliceblue;
+    
+    margin: 10px;
+}
+
+  }
